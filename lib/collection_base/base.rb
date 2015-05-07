@@ -2,6 +2,7 @@ module CollectionBase
 
   class Base
     class << self
+      @@register = []
       def process_model(object)
         result = []
         files = load_json(object).to_a
