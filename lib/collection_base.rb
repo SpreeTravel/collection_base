@@ -1,5 +1,6 @@
 require "collection_base/version"
 
 module CollectionBase
-  # Your code goes here...
+  require 'collection_base/base'
+  include 'Cenithub::Client'
 end
