@@ -6,11 +6,11 @@ module CollectionBase
 
   register = []
 
-  def register (collection)
+  def registers_set (collection)
     @register << collection
   end
 
-  def registers
+  def registers_get
     @register
   end
 
