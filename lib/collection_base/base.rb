@@ -2,14 +2,13 @@ module CollectionBase
 
   class Base
     class << self
-      @@register = []
       def process_model(object)
         result = []
         files = load_json(object).to_a
         files.collect do |file|
           result << JSON.parse(open_json(file))
         end
-        {object => result}
+       result
       end
 
       def process_libraries()
@@ -31,7 +30,7 @@ module CollectionBase
           end
           results << {"name" => lib["name"], "schemas" => schemas}
         end
-        {"libraries" => results}
+        results
       end
 
       def shared_base()
