@@ -47,14 +47,13 @@ module CollectionBase
     end
 
     def open_json(file)
-      File.open(@base_path + '/' + file, mode: "r:utf-8").read
+      File.open(file, mode: "r:utf-8").read
     rescue => e
       e.message
     end
 
     def open_head
-      head_file = 'index.json'
-      File.open(@base_path + '/' + head_file, mode: "r:utf-8").read
+      File.open(@base_path + '/index.json', mode: "r:utf-8").read
     rescue => e
       e.message
     end
@@ -66,15 +65,13 @@ module CollectionBase
     end
 
     def load_json(object)
-      Dir.chdir(@base_path)
-      Dir.glob("#{object}/*.json")
+      Dir.glob("#{@base_path}/#{object}/*.json")
     rescue => e
       e.message
     end
 
     def load_libraries(lib)
-      Dir.chdir(@base_path)
-      Dir.glob("libraries/#{lib}/*.json")
+      Dir.glob("#{@base_path}/libraries/#{lib}/*.json")
     rescue => e
       e.message
     end
