@@ -60,10 +60,7 @@ module CollectionBase
     end
 
     def open_sample(model)
-      Dir.chdir(@base_path)
-      Dir.chdir('..')
-      Dir.chdir('..')
-      File.open(Dir.to_path + "spec/support/sample/#{model}.json", mode: "r:utf-8").read
+      File.open(@base_path + "/support/sample/#{model}.json", mode: "r:utf-8").read
     rescue => e
       e.message
     end
