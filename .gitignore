@@ -1,6 +1,6 @@
-.idea/
 /.bundle/
 /.yardoc
+/.idea/
 /Gemfile.lock
 /_yardoc/
 /coverage/
@@ -8,3 +8,8 @@
 /pkg/
 /spec/reports/
 /tmp/
+**.orig
+*.swp
+*.swo
+**~
+

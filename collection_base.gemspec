@@ -11,8 +11,8 @@ Gem::Specification.new do |s|
   s.description = 'Collection base for develop Collection in Cenithub'
   s.required_ruby_version = '>= 2.0.0'
 
-  s.authors    = '[Asnioby Hernandez Lopez, Miguel Sancho]'
-  s.email     = '[asnioby@gmail.com, sanchojaf@gmail.com]'
+  s.authors    = ['Asnioby Hernandez Lopez', 'Miguel Sancho']
+  s.email     =  ['asnioby@gmail.com', 'sanchojaf@gmail.com']
   s.homepage  = 'http://www.cenitsaas.com'
   s.license       = "MIT"
 
