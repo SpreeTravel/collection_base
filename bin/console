@@ -1,7 +1,10 @@
 #!/usr/bin/env ruby
 
-require "bundler/setup"
-require "collection_base"
+require 'pathname'
+ENV['BUNDLE_GEMFILE'] ||= File.expand_path("../../Gemfile",
+  Pathname.new(__FILE__).realpath)
 
-require "irb"
-IRB.start
+require 'rubygems'
+require 'bundler/setup'
+
+load Gem.bin_path('collection_base', 'console')
