@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
 
   s.authors    = ['Asnioby Hernandez Lopez', 'Miguel Sancho']
   s.email     =  ['asnioby@gmail.com', 'sanchojaf@gmail.com']
-  s.homepage  = 'http://www.cenitsaas.com'
+  s.homepage  = 'https://github.com/openjaf/collection_base'
   s.license       = "MIT"
 
   s.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
